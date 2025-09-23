@@ -1,0 +1,30 @@
+:root {
+  
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+   // fixed wrong variable reference
+}
+
+.cardStacking {
+  overflow: hidden;
+  padding: 60px 0;
+
+  .stackCard {
+   border-radius: 30px;
+  position: relative;
+  min-height: 450px;  
+  padding: 60px 35px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  
+  
+  
+
+  }
+
+}
+
+.spacer {
+  height: 200px;
+}
