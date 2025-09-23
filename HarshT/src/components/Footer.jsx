@@ -34,10 +34,10 @@ function Footer() {
                   Social :
                 </p>
                   <div className="Socials flex gap-2">
-                                          <a href="https://www.instagram.com/harshvyas_25/?igsh=cXM3emFtcjdvaG1u#" className='max-sm:text-[13px] lg:text-[20px] cursor-pointer'><FaInstagram className='hover:animate-pulse' /></a>
-                                          <a href="https://www.linkedin.com/in/mr-titiya-harsh-4b6a55286?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" className='max-sm:text-[13px] lg:text-[20px] cursor-pointer'><FaLinkedin className='hover:animate-pulse' /></a>
-                                          <a href="https://github.com/MR-HarshTitiya" className='max-sm:text-[13px] lg:text-[20px] cursor-pointer'><FaGithub className='hover:animate-pulse' /></a>
-                                          <a href="https://dev.to/mrharshtitiya" className='max-sm:text-[13px] lg:text-[20px] cursor-pointer'><FaDev className='hover:animate-pulse' /></a>
+                                          <a target="_blank" href="https://www.instagram.com/harshvyas_25/?igsh=cXM3emFtcjdvaG1u#" className='max-sm:text-[13px] lg:text-[20px] cursor-pointer'><FaInstagram className='hover:animate-pulse' /></a>
+                                          <a target="_blank" href="https://www.linkedin.com/in/mr-titiya-harsh-4b6a55286?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" className='max-sm:text-[13px] lg:text-[20px] cursor-pointer'><FaLinkedin className='hover:animate-pulse' /></a>
+                                          <a target="_blank" href="https://github.com/MR-HarshTitiya" className='max-sm:text-[13px] lg:text-[20px] cursor-pointer'><FaGithub className='hover:animate-pulse' /></a>
+                                          <a target="_blank" href="https://dev.to/mrharshtitiya" className='max-sm:text-[13px] lg:text-[20px] cursor-pointer'><FaDev className='hover:animate-pulse' /></a>
                                       </div>
               </div>
             
