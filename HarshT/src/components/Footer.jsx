@@ -45,7 +45,7 @@ function Footer() {
             <hr className='max-sm:w-[95%] m-auto mt-5 border-1 rounded-4xl' />
             <div className='flex justify-center gap-15  max-sm:gap-5'>
               <p className='mt-6 px-1 lg:text-[19px] max-sm:text-[12px] font-[smoc] font-[600]'>
-                © Copyright 2025. All Rights Reserved by Harsh Titiya
+                © Copyright 2025. All Rights Reserved by HARSH_TITIYA
               </p>
             </div>
             <div className="techstack flex flex-col items-center mt-2">
