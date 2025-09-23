@@ -5,8 +5,8 @@ function Cv() {
   // Function to handle download
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = "./public/HARSH_TITIYA.pdf"; // Path to your file in public folder
-    link.download = 'HARSH_TITIYA'; // File name for user
+    link.href = "./public/HARSH_T"; // Path to your file in public folder
+    link.download = 'HARSH_T'; // File name for user
     link.click();
   };
 
