@@ -5,9 +5,11 @@ function Cv() {
   // Function to handle download
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = "./public/HARSH_T.pdf"; // Path to your file in public folder
-    link.download = 'HARSH_T'; // File name for user
+    link.href = "/HARSH_T.pdf"; // Correct path to public PDF
+    link.download = 'HARSH_T.pdf';
+    document.body.appendChild(link);
     link.click();
+    document.body.removeChild(link);
   };
 
   return (
