@@ -1,83 +1,81 @@
-import React , { useState , useEffect } from 'react'
-import mypic from '../assets/images/myp.jpg'
-import { motion } from 'framer-motion';
+import React from 'react'
 
 function Hero() {
-
-const greetings = ["HI !", "नमस्ते !", "કેમ છો !"];
-  const [index, setIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIndex((prev) => (prev + 1) % greetings.length);
-    }, 1000);
-    return () => clearInterval(interval);
-  }, [greetings.length]);
-
   return (
-    <>
-        <div className='FHT font-[medula] text-center text-[35px] flex 
-            max-sm:text-[65px] max-sm:mt-3 max-sm:items-center max-sm:justify-center max-sm:flex-col 
-            md:mt-33 md:justify-center
-            lg:mt-50
-            xl:mt-50
-            
-            text-white'>
-            <div className='xl:mr-264 lg:mr-160  md:ml-[-310px] lg:ml-[18%] xl:ml-[37%]'>
-                <p className='text-[14px] lg:mr-30  md:mr-16 mr-28 max-sm:mr-1 max-sm:text-[30px]
-                    md:text-[22px] md:mb-2
-                    xl:text-[35px]
-                    lg:text-[27px]
-                    '>
-                    HARSH TITIYA
-                </p>
-                <p className='font-bold lg:mt-[-35px] md:mt-[-25px] xl:mt-[-45px] max-sm:mt-[-28px]
-                    md:text-[60px]
-                    lg:text-[90px]
-                    xl:text-[100px]'>
-                    FullStack
-                </p>
-            </div>
-        </div>
-            <div className="img mt-[-14px] md:mt-[-165px] lg:mt-[-260px]">
-                <img id='home'
-  src={mypic}
-  alt="Hero"
-  className="rounded-xl lg:w-55  md:w-35 max-sm:w-50 max-sm:h-80 flex m-auto "
-/>
-<div className='relative flex justify-center'>
+    <div className="w-full min-h-screen bg-[#f6f4e8] flex flex-col items-center justify-center relative overflow-hidden pt-10 font-['VT323',_monospace]">
+      <style>
+        {`@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');`}
+      </style>
+      
+      {/* 3D POV Perspective Lines */}
+      <svg className="absolute inset-0 w-full h-full pointer-events-none z-0" xmlns="http://www.w3.org/2000/svg">
+        {/* Top Left */}
+        <line x1="0" y1="25%" x2="calc(50% - 200px)" y2="35%" stroke="#c2bcac" strokeWidth="3" strokeLinecap="square" />
+        {/* Top Right */}
+        <line x1="100%" y1="25%" x2="calc(50% + 200px)" y2="35%" stroke="#c2bcac" strokeWidth="3" strokeLinecap="square" />
+        {/* Bottom Left */}
+        <line x1="0" y1="90%" x2="calc(50% - 200px)" y2="70%" stroke="#c2bcac" strokeWidth="3" strokeLinecap="square" />
+        {/* Bottom Right */}
+        <line x1="100%" y1="90%" x2="calc(50% + 200px)" y2="70%" stroke="#c2bcac" strokeWidth="3" strokeLinecap="square" />
+      </svg>
 
-<motion.div
-            key={index} // triggers animation when text changes
-            initial={{ scale: 0, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            exit={{ scale: 0, opacity: 0 }}
-            transition={{ duration: 0.3 }}
-            
-            className=" greatmasg lg:mt-[-50px] lg:mr-45 lg:w-19 lg:h-19 lg:text-[17px]  md:mt-[-45px] md:mr-30 md:w-14 md:h-14 md:text-[12px] max-sm:w-18 max-sm:h-18  rounded-full justify-center flex  absolute mr-45  mt-[-70px] max-sm:text-[13px] text-white bg-blue-700 max-sm:scale-110">
-            <div className='flex   items-center font-bold'>
-              {greetings[index]}
-            </div>
-          </motion.div>
-                </div>
-            </div>
-            <div className='SHT lg:mt-[-80px] text-center font-[medula] md:flex md:flex-col  max-sm:mt-[-16px] text-white'>
-              <div className="lg:ml-125 xl:ml-130 lg:mt-[-190px]  md:mt-[-172px] md:ml-80">
+      {/* Left Wall Text (Social Handles) */}
+      <div className="absolute left-[10%] top-[45%] -translate-y-1/2 z-10" style={{ transform: 'rotate(-15deg) skewY(-10deg)' }}>
+        <h2 className="text-[#3a3a3a] text-3xl md:text-5xl uppercase tracking-widest text-center drop-shadow-md">
+          social<br/>handles
+        </h2>
+      </div>
 
-                <p className='lg:text-[100px] md:text-[60px] text-[35px] max-sm:text-[60px] font-bold'>
-                    Developer
-                </p>
-                <p className='lg:text-[19px] lg:ml-10 lg:mt-[-18px] md:ml-1 md:mt-[-13px] md:text-[12px]  font-[smoc] font-[600] ml-1 max-sm:text-[15px]'>
+      {/* Right Wall Text (Contact Me) */}
+      <div className="absolute right-[15%] top-[45%] -translate-y-1/2 z-10" style={{ transform: 'rotate(15deg) skewY(10deg)' }}>
+        <h2 className="text-[#3a3a3a] text-3xl md:text-5xl uppercase tracking-widest text-center drop-shadow-md">
+          contact<br/>me
+        </h2>
+      </div>
 
-                I am a MERN Stack Developer
-                </p>
-              </div>
-            </div>
-  
-           
+      {/* Floor Text (Navbar) */}
+      <div className="absolute bottom-[8%] left-1/2 -translate-x-1/2 z-10">
+        <h2 className="text-[#3a3a3a] text-3xl md:text-4xl uppercase tracking-[0.3em]">
+          Navbar
+        </h2>
+      </div>
+
+      <div className="relative z-10 flex flex-col items-center mt-6">
         
-    </>
+        {/* Yellow Whiteboard Box (Pixel Style) */}
+        <div className="relative bg-[#fceb9e] border-4 border-[#2c2c2c] w-[350px] h-[120px] flex items-center justify-center shadow-[6px_6px_0px_0px_#2c2c2c]">
+          {/* Strings connecting to ceiling (Blocky) */}
+          <div className="absolute bottom-full left-[20%] w-[4px] h-[300px] bg-[#2c2c2c]"></div>
+          <div className="absolute bottom-full right-[20%] w-[4px] h-[300px] bg-[#2c2c2c]"></div>
+
+          <h1 className="text-[60px] text-[#2c2c2c] tracking-widest mt-2 uppercase">
+            developer
+          </h1>
+        </div>
+
+        {/* Wires connecting whiteboard to the desk area (Pixel/Stair-step style) */}
+        <div className="w-[500px] h-[140px] relative mt-0 pointer-events-none z-20">
+          <svg className="w-full h-full" viewBox="0 0 500 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+            {/* Left Wire (Dark Blue/Black) - Stair step */}
+            <path d="M 70 0 V 40 H 130 V 80 H 190 V 110 H 230 V 130" stroke="#1e293b" strokeWidth="6" fill="none" strokeLinecap="square" strokeLinejoin="miter" />
+            {/* Right Wire (Red) - Stair step */}
+            <path d="M 430 0 V 30 H 380 V 70 H 320 V 100 H 270 V 130" stroke="#991b1b" strokeWidth="6" fill="none" strokeLinecap="square" strokeLinejoin="miter" />
+          </svg>
+        </div>
+
+        {/* Developer Desk Image */}
+        <div className="relative -mt-[130px] z-10 pointer-events-none">
+          <img 
+            src="/bg_desktop_me-removebg-preview.png" 
+            alt="Developer Desk" 
+            className="w-[550px] h-auto object-contain"
+            style={{ imageRendering: 'pixelated' }}
+          />
+        </div>
+
+      </div>
+    </div>
   )
 }
 
-export default Hero
+export default Hero

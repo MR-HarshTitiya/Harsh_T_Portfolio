@@ -5,14 +5,9 @@ function Cv() {
   // Function to handle download
   const handleDownload = () => {
     const link = document.createElement('a');
-<<<<<<< HEAD
     link.href = "/HARSH_T.pdf"; // Correct path to public PDF
     link.download = 'HARSH_T.pdf';
     document.body.appendChild(link);
-=======
-    link.href = "/HARSH_T.pdf"; // Path to your file in public folder
-    link.download = 'HARSH_T'; // File name for user
->>>>>>> 7abfc5eddeab0f2684383c6fdb1b9ee109ee362d
     link.click();
     document.body.removeChild(link);
   };
