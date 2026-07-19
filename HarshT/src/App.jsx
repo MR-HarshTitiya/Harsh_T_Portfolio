@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import Nav from './components/Nav'
 import Hero from './components/Hero'
 import Servicess from './components/Servicess'
 import Cv from './components/Cv'
@@ -17,7 +16,6 @@ function App() {
   return (
     <>
       < CursorBall/>
-      <Nav/>
       <Hero/>
       <Cv/>
       <Servicess />

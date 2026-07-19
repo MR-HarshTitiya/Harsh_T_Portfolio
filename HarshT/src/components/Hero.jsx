@@ -1,16 +1,16 @@
 import React from 'react'
-
+import Nav from './Nav'
 function Hero() {
   return (
     <div className="w-full min-h-screen bg-[#f6f4e8] flex flex-col items-center justify-center relative overflow-hidden pt-10 font-['VT323',_monospace]">
       <style>
         {`@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');`}
       </style>
-      
+
       {/* 3D POV Perspective Lines & Cables */}
       <svg className="absolute inset-0 w-full h-full pointer-events-none z-0" xmlns="http://www.w3.org/2000/svg">
         {/* Original Light Perspective Lines (Behind) */}
-        
+
 
         {/* Wires tracing the perspective lines (as drawn by user) */}
         {/* Left wire from board */}
@@ -26,26 +26,24 @@ function Hero() {
       {/* Left Wall Text (Social Handles) */}
       <div className="absolute left-[10%] top-[45%] -translate-y-1/2 z-10" style={{ transform: 'rotate(-15deg) skewY(-10deg)' }}>
         <h2 className="text-[#3a3a3a] text-3xl md:text-5xl uppercase tracking-widest text-center drop-shadow-md">
-          social<br/>handles
+          social<br />handles
         </h2>
       </div>
 
       {/* Right Wall Text (Contact Me) */}
       <div className="absolute right-[15%] top-[45%] -translate-y-1/2 z-10" style={{ transform: 'rotate(15deg) skewY(10deg)' }}>
         <h2 className="text-[#3a3a3a] text-3xl md:text-5xl uppercase tracking-widest text-center drop-shadow-md">
-          contact<br/>me
+          contact<br />me
         </h2>
       </div>
 
       {/* Floor Text (Navbar) */}
-      <div className="absolute bottom-[8%] left-1/2 -translate-x-1/2 z-10">
-        <h2 className="text-[#3a3a3a] text-3xl md:text-4xl uppercase tracking-[0.3em]">
-          Navbar
-        </h2>
+      <div className="absolute bottom-[4%] left-1/2 -translate-x-1/2 z-50 w-full flex justify-center">
+        <Nav />
       </div>
 
       <div className="relative z-10 flex flex-col items-center mt-6">
-        
+
         {/* Yellow Whiteboard Box (Pixel Style) */}
         <div className="relative bg-[#fceb9e] border-4 border-[#2c2c2c] w-[350px] h-[120px] flex items-center justify-center shadow-[6px_6px_0px_0px_#2c2c2c] z-20">
           {/* Strings connecting to ceiling (Blocky) */}
@@ -64,9 +62,9 @@ function Hero() {
 
         {/* Developer Desk Image */}
         <div className="relative mt-8 z-10 pointer-events-none">
-          <img 
-            src="/bg_desktop_me-removebg-preview.png" 
-            alt="Developer Desk" 
+          <img
+            src="/bg_desktop_me-removebg-preview.png"
+            alt="Developer Desk"
             className="w-[550px] h-auto object-contain"
             style={{ imageRendering: 'pixelated' }}
           />

@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 @font-face {
   font-family: medula;
@@ -10,16 +11,30 @@
   src: url(./assets/fonts/SmoochSans-VariableFont_wght.ttf);
 }
 
-body{
+body {
   scroll-behavior: smooth;
 }
 
-body{
+body {
 
   @apply bg-blue-800
 }
 
-.cc{
+.font-pixel {
+  font-family: 'VT323', monospace;
+}
+
+.pixel-box {
+  border: 4px solid #fff;
+  border-radius: 0;
+  box-shadow: 
+    inset -2px -2px 0px 0px rgba(0,0,0,0.5), 
+    inset 2px 2px 0px 0px rgba(255,255,255,0.5),
+    4px 4px 0px 0px #000;
+  image-rendering: pixelated;
+}
+
+.cc {
   letter-spacing: 1px;
 }
 
@@ -39,7 +54,7 @@ body{
   background: #000000;
   border-radius: 50%;
   transform: translate(50%, 50%);
-  transition: width 0.5s cubic-bezier(.4,0,.2,1), height 0.5s cubic-bezier(.4,0,.2,1);
+  transition: width 0.5s cubic-bezier(.4, 0, .2, 1), height 0.5s cubic-bezier(.4, 0, .2, 1);
   z-index: -1;
 }
 
@@ -53,11 +68,6 @@ body{
   transition: color 0.2s;
 }
 
-.animate-spin{
+.animate-spin {
   animation-duration: 3s;
 }
-
-
-
-
-
