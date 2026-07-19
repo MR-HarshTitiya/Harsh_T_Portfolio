@@ -11,7 +11,7 @@
   src: url(./assets/fonts/SmoochSans-VariableFont_wght.ttf);
 }
 
-body {
+html {
   scroll-behavior: smooth;
 }
 

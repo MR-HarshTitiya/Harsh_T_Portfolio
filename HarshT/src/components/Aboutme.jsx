@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from 'react'
-import MYpic from '../assets/images/myp.jpg'
 import { FaInstagram, FaLinkedin, FaGithub, FaDev, } from "react-icons/fa6";
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
@@ -53,43 +52,53 @@ function Aboutme() {
     }, []);
 
     return (
-        <div id='about' className='flex-col  items-center flex  text-white'>
-            <section className="Aboutme lg:mb-55 max-sm:mb-58">
-                <div className="text lg:mr-75  ">
-                    <h1 className='lg:text-5xl lg:mt-15 md:text-3xl max-sm:text-2xl max-sm:mt-[-25px]  font-[medula] uppercase'>about me</h1>
-                    <h4 className='lg:text-2xl  lg:w-100 md:w-140 max-sm:text-md   font-[smoc] mt-5 capitalize max-sm:w-38'>
-                        hi, i am harsh a fullstack webdeveloper,
-                        <div>passionate about building end-to-end responshive web applications.</div>
-                        
-                    </h4>
+        <div id='about' className='flex flex-col items-center pt-24 pb-24 w-full bg-[#f6f4e8] overflow-hidden'>
+            <h2 className="font-pixel text-6xl text-center text-[#3a3a3a] mb-12 tracking-wider font-bold">
+                " About Me "
+            </h2>
 
-                    <section className="achivment md:mt-3 uppercase flex gap-3 mt-11">
-                        <div className="ProjectC flex flex-col items-center">
-                            <span ref={projectsRef} className="counter lg:text-[65px] text-2xl font-[medula] ">0</span>
-                            <span className= 'font-[medula] lg:text-2xl max-sm:text-xl'>Completed Projects</span>
+            <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 w-full max-w-[95%] xl:max-w-7xl px-4 lg:px-8 justify-center items-center mt-8">
+                
+                {/* Text Content */}
+                <div className="flex-1 flex flex-col w-full bg-white border-4 border-[#2c2c2c] shadow-[8px_8px_0px_0px_#2c2c2c] p-6 md:p-10 text-[#2c2c2c]">
+                    <h3 className='font-pixel text-3xl md:text-4xl mb-6'>
+                        Hi, I am Harsh, a Fullstack Web Developer.
+                    </h3>
+                    <p className='font-pixel text-xl md:text-2xl leading-relaxed mb-8'>
+                        Passionate about building end-to-end responsive web applications.
+                    </p>
+
+                    <section className="achivment flex flex-col md:flex-row gap-4 w-full">
+                        <div className="flex-1 bg-[#ffe56f] border-4 border-[#2c2c2c] shadow-[4px_4px_0px_0px_#2c2c2c] p-4 flex flex-col items-center">
+                            <span ref={projectsRef} className="counter font-pixel text-4xl md:text-5xl font-bold">0</span>
+                            <span className='font-pixel text-lg md:text-xl mt-2 text-center uppercase tracking-wider'>Completed Projects</span>
                         </div>
-                        <div className="Hackathon flex flex-col items-center">
-                            <span ref={hackathonRef} className="counter lg:text-[65px] text-2xl font-[medula] ">0</span>
-                            <span className= 'font-[medula] lg:text-2xl max-sm:text-xl'>hackathon attended</span>
+                        <div className="flex-1 bg-[#ffe56f] border-4 border-[#2c2c2c] shadow-[4px_4px_0px_0px_#2c2c2c] p-4 flex flex-col items-center">
+                            <span ref={hackathonRef} className="counter font-pixel text-4xl md:text-5xl font-bold">0</span>
+                            <span className='font-pixel text-lg md:text-xl mt-2 text-center uppercase tracking-wider'>Hackathons Attended</span>
                         </div>
-                        <div className="Clients flex flex-col items-center">
-                            <span ref={clientsRef} className="counter lg:text-[65px] text-2xl font-[medula] ">0</span>
-                            <span className= 'font-[medula] lg:text-2xl max-sm:text-xl'>Clients</span>
+                        <div className="flex-1 bg-[#ffe56f] border-4 border-[#2c2c2c] shadow-[4px_4px_0px_0px_#2c2c2c] p-4 flex flex-col items-center">
+                            <span ref={clientsRef} className="counter font-pixel text-4xl md:text-5xl font-bold">0</span>
+                            <span className='font-pixel text-lg md:text-xl mt-2 text-center uppercase tracking-wider'>Clients</span>
                         </div>
                     </section>
 
-                    <div className="Socials flex md:mt-6 max-sm:justify-center mt-8 md:gap-6 max-sm:gap-6">
-                        <a href="https://www.instagram.com/harshvyas_25/?igsh=cXM3emFtcjdvaG1u#" target="_blank"  className='lg:text-[30px] text-[25px] cursor-pointer'><FaInstagram className='hover:animate-pulse' /></a>
-                        <a href="https://www.linkedin.com/in/mr-titiya-harsh-4b6a55286?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"  className='lg:text-[30px] text-[25px] cursor-pointer'><FaLinkedin className='hover:animate-pulse' /></a>
-                        <a href="https://github.com/MR-HarshTitiya" target="_blank" className='lg:text-[30px] text-[25px] cursor-pointer'><FaGithub className='hover:animate-pulse' /></a>
-                        <a href="https://dev.to/mrharshtitiya" target="_blank" className='lg:text-[30px] text-[25px] cursor-pointer'><FaDev className='hover:animate-pulse' /></a>
+                    <div className="Socials flex mt-8 gap-6 justify-center md:justify-start">
+                        <a href="https://www.instagram.com/harshvyas_25/?igsh=cXM3emFtcjdvaG1u#" target="_blank" rel="noreferrer" className='border-4 border-[#2c2c2c] bg-[#ffe56f] text-[#2c2c2c] w-14 h-14 flex items-center justify-center hover:bg-[#f6dd70] active:scale-95 transition-transform shadow-[4px_4px_0px_0px_#2c2c2c]'><FaInstagram className='text-3xl' /></a>
+                        <a href="https://www.linkedin.com/in/mr-titiya-harsh-4b6a55286?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noreferrer" className='border-4 border-[#2c2c2c] bg-[#ffe56f] text-[#2c2c2c] w-14 h-14 flex items-center justify-center hover:bg-[#f6dd70] active:scale-95 transition-transform shadow-[4px_4px_0px_0px_#2c2c2c]'><FaLinkedin className='text-3xl' /></a>
+                        <a href="https://github.com/MR-HarshTitiya" target="_blank" rel="noreferrer" className='border-4 border-[#2c2c2c] bg-[#ffe56f] text-[#2c2c2c] w-14 h-14 flex items-center justify-center hover:bg-[#f6dd70] active:scale-95 transition-transform shadow-[4px_4px_0px_0px_#2c2c2c]'><FaGithub className='text-3xl' /></a>
+                        <a href="https://dev.to/mrharshtitiya" target="_blank" rel="noreferrer" className='border-4 border-[#2c2c2c] bg-[#ffe56f] text-[#2c2c2c] w-14 h-14 flex items-center justify-center hover:bg-[#f6dd70] active:scale-95 transition-transform shadow-[4px_4px_0px_0px_#2c2c2c]'><FaDev className='text-3xl' /></a>
                     </div>
                 </div>
 
-                <div className="img relative lg:mt-[-160px] max-sm:mt-[-250px] items-center flex justify-center   transform-3d md:mt-[-95px]">
-                    <img src={MYpic} alt="mypic" className="lg:w-60 lg:ml-150 md:w-33 md:ml-100 max-sm:w-30 absolute max-sm:ml-45 rounded-2xl" />
+                {/* Image */}
+                <div className="flex-1 flex justify-center items-center w-full mt-12 lg:mt-0">
+                    <div className="transform hover:-translate-y-2 transition-transform duration-300">
+                        <img src="/about_me_pic.jpeg" alt="mypic" className="w-72 md:w-96 object-contain" />
+                    </div>
                 </div>
-            </section>
+
+            </div>
         </div>
     )
 }
